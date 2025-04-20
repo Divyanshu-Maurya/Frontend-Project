@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="shortcut icon" href="img/bg.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Preload background images -->
+  <link rel="preload" href="img/bg.jpg" as="image">
+  <link rel="preload" href="img/bg1.jpg" as="image">
+  <link rel="preload" href="img/clear.jpg" as="image">
+  <link rel="preload" href="img/clouds.jpg" as="image">
+  <link rel="preload" href="img/drizzle.jpg" as="image">
+  <link rel="preload" href="img/mist.jpg" as="image">
+  <link rel="preload" href="img/rainy.jpg" as="image">
+  <link rel="preload" href="img/snow.jpg" as="image">
+  <link rel="preload" href="img/sunny.jpg" as="image">
+  <link rel="preload" href="img/thunderstrom.jpg" as="image">
+</head>
+
+<body class="light">
+
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">🌙</button>
+  </div>
+
+  <div class="app-main" id="parent">
+    <div class="header">
+      <h4>Weather App</h4>
+    </div>
+    <div class="searchInputBox">
+      <input type="text" id="input-box" class="input-box" placeholder="Enter city name" />
+    </div>
+    <div class="weather-body" id="weather-body">
+      <!-- weather-body will be appended by JavaScript -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+</body>
+
+</html>

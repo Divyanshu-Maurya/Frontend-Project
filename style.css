@@ -1,0 +1,164 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 92vh;
+  overflow: auto;
+  transition: background-image 0.5s ease-in-out;
+  background-image: url('img/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Light mode default */
+body.light {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Header */
+.header h4 {
+  color: #da1e4e;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 20px;
+}
+
+/* App container */
+.app-main {
+  min-height: 10vh;
+  width: 35vw;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background: linear-gradient(to top, #92fe9d, #c0dfec);
+  transition: background-color 0.3s ease;
+}
+
+body.dark .app-main {
+  background: linear-gradient(to top, #2c3e50, #34495e);
+}
+
+/* Input box */
+.input-box {
+  width: 100%;
+  background: #ffffff;
+  color: #333;
+  font-weight: 500;
+  border: none;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  outline: none;
+}
+
+body.dark .input-box {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Weather details container */
+.weather-body {
+  color: #fff;
+  padding: 20px;
+  line-height: 2rem;
+  border-radius: 10px;
+  display: none;
+}
+
+body.light .weather-body {
+  background: linear-gradient(to top, #da1e4e, #e4603a);
+}
+
+body.dark .weather-body {
+  background: linear-gradient(to top, #555, #444);
+}
+
+/* Location details */
+.location-deatils {
+  font-weight: bold;
+}
+
+/* Weather status section */
+.weather-status {
+  padding: 20px;
+}
+
+.temp {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 20px 0px;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather {
+  margin-top: 25px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.min-max {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+#updated_on {
+  font-size: 1rem;
+}
+
+/* Day details */
+.day-details {
+  padding: 20px;
+}
+
+.basic {
+  font-size: 1rem;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+body.dark .theme-toggle {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 800px) {
+  .app-main {
+    width: 95%;
+    padding: 10px;
+  }
+
+  body {
+    min-height: 94vh;
+  }
+}
